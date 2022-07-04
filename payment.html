@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".\CSS\main.css">
+</head>
+<body>
+    <h1>Cart</h1>
+    <h3 class="product">Product:<span>Bet</span></h3>
+    <h3 class="price">Price:<span>$4.99</span></h3>
+    <label for="amount">Quantity</label>
+    <input id="amount" type="number" value="1" min="0">
+    <h3 class="price">Subtotal:</h3>
+    <h3><div class="currency">$</div><div id="subTotalText">0.00</div></h3>
+    <script src="app.js"></script>
+    <div id="container"></div>
+    <script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script>
+</body>
+</html>
