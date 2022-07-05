@@ -1,30 +1,28 @@
-
-import { mysql } from 'mysql';
-const conn = mysql.createConnection({
+const  mysql  = require("mysql");
+const pool = mysql.createPool({
     host: "localhost",
     user: "root",
+    database: "betting_system",
     password: "",
-    database: "lab4",
     connectionLimit: 10
 });
-
-var myLink = document.getElementById('u80_input');
-//console.log(myLink.value);
-myLink.onclick = function(){
-    const a = myLink.value;
-    conn.query("INSERT INTO eurovisionchart (Country, Year, Place, Jury, Televote VALUES (?, ?, ?, ?, ?))", [a, a, a, a, a], (err, res) => {
+    var error = "", field = "", field2 = "", errr = '', errr2='', errr3 ='';
+   
+    field = '0912345678';
+    errr='12345678';
+    pool.query("SELECT * FROM customers WHERE phone_number = '"+field+"' AND password = '" + errr+"'", (err, res) => {
         if (err){
             return console.log(err);
         }
-        console.log("Success!");
+        if (res.length==0){
+          error += "Невірний телефон або пароль!\r\n";
+        }
+        
     });
-  }
 
-
-
-/* conn.end(err => {
-    if (err){
-        return console.log(err);
+    if (error=="") { console.log("0 ошибок"); }
+    else {
+        console.log(error);
     }
-}); */
+    
 

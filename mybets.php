@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Головна</title>
@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
     <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <link href="files/головна/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/mybets/styles.css" type="text/css" rel="stylesheet"/>
     <script src="resources/scripts/jquery-3.2.1.min.js"></script>
     <script src="resources/scripts/axure/axQuery.js"></script>
     <script src="resources/scripts/axure/globals.js"></script>
@@ -86,107 +86,33 @@
       <?php
         endif;
       ?>
-      <!-- Unnamed (Rectangle) -->
-      <div id="u5" class="ax_default primary_button">
-        <div id="u5_div" class=""></div>
-        <div id="u5_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
+      
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u6" class="ax_default primary_button">
-        <div id="u6_div" class=""></div>
-        <div id="u6_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
+      <!-- Unnamed (Dynamic Panel) -->
+      <div id="u187" class="ax_default">
+        <div id="u187_state0" class="panel_state" data-label="State 1" style="">
+          <div id="u187_state0_content" class="panel_state_content">
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u7" class="ax_default heading_1">
-        <div id="u7_div" class=""></div>
-        <div id="u7_text" class="text ">
-          <p><span>VS</span></p>
+            <!-- Unnamed (Rectangle) -->
+            <div id="u188" class="ax_default primary_button">
+              <div id="u188_div" class=""></div>
+              <div id="u188_text" class="text ">
+                <p><a href="main.php" style="text-decoration:none ;">Головна</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div id="u187_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
+          <div id="u187_state1_content" class="panel_state_content">
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u8" class="ax_default primary_button">
-        <div id="u8_div" class=""></div>
-        <div id="u8_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u9" class="ax_default primary_button">
-        <div id="u9_div" class=""></div>
-        <div id="u9_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u10" class="ax_default heading_1">
-        <div id="u10_div" class=""></div>
-        <div id="u10_text" class="text ">
-          <p><span>VS</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u11" class="ax_default button">
-        <div id="u11_div" class=""></div>
-        <div id="u11_text" class="text ">
-          <p><span>CS:GO</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u12" class="ax_default button">
-        <div id="u12_div" class=""></div>
-        <div id="u12_text" class="text ">
-          <p><span>DOTA 2</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u13" class="ax_default primary_button">
-        <div id="u13_div" class=""></div>
-        <div id="u13_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u14" class="ax_default primary_button">
-        <div id="u14_div" class=""></div>
-        <div id="u14_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u15" class="ax_default heading_1">
-        <div id="u15_div" class=""></div>
-        <div id="u15_text" class="text ">
-          <p><span>VS</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u16" class="ax_default button">
-        <img id="u16_img" class="img " src="images/головна/u16.svg"/>
-        <div id="u16_text" class="text ">
-          <p><span>FIFA</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u17" class="ax_default primary_button">
-        <div id="u17_div" class=""></div>
-        <div id="u17_text" class="text ">
-          <p><a href="main.php" style="text-decoration:none ;">Головна</a></p>
+            <!-- Unnamed (Rectangle) -->
+            <div id="u189" class="ax_default primary_button">
+              <div id="u189_div" class=""></div>
+              <div id="u189_text" class="text ">
+                <p><a href="main.php" style="text-decoration:none ;">Головна</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -194,7 +120,7 @@
       <div id="u18" class="ax_default primary_button">
         <div id="u18_div" class=""></div>
         <div id="u18_text" class="text ">
-          <p><a href="mybets.php" style="text-decoration:none ;">Мої ставки</a></p>
+          <p><span>Мої ставки</span></p>
         </div>
       </div>
 
@@ -382,126 +308,59 @@
         </div>
       </div>
 
-      <!-- Unnamed (Line) -->
-      <div id="u39" class="ax_default line">
-        <img id="u39_img" class="img " src="images/головна/u39.svg"/>
-        <div id="u39_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Vertical Line) -->
-      <div id="u40" class="ax_default line">
-        <img id="u40_img" class="img " src="images/головна/u40.svg"/>
-        <div id="u40_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
+        <?php
+            $tel = $_COOKIE['user'];
+            $mysql = new mysqli('localhost', 'root', '', 'betting_system');
+            $result = $mysql->query("SELECT * FROM `customers` WHERE `phone_number` = '$tel'");
+            $user = $result->fetch_assoc();
+            $UID = $user['UID'];
+            $result = $mysql->query("SELECT * FROM `bids` WHERE `UID` = '$UID'");
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u41" class="ax_default link_button">
-        <div id="u41_div" class=""></div>
-        <div id="u41_text" class="text ">
-          <p><span>Contact us</span></p>
-        </div>
-      </div>
+        ?>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u42" class="ax_default link_button">
-        <div id="u42_div" class=""></div>
-        <div id="u42_text" class="text ">
-          <p><span>Our team</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u43" class="ax_default link_button">
-        <div id="u43_div" class=""></div>
-        <div id="u43_text" class="text ">
-          <p><span>Twitter</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u44" class="ax_default link_button">
-        <div id="u44_div" class=""></div>
-        <div id="u44_text" class="text ">
-          <p><span>Facebook</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u45" class="ax_default link_button">
-        <div id="u45_div" class=""></div>
-        <div id="u45_text" class="text ">
-          <p><span>Donate</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u46" class="ax_default">
-        <div id="u46_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u46_state0_content" class="panel_state_content">
 
-            <!-- Unnamed (Rectangle) -->
-            <div id="u47" class="ax_default box_1">
-              <div id="u47_div" class=""></div>
-              <div id="u47_text" class="text " style="display:none; visibility: hidden">
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u48" class="ax_default link_button">
-        <div id="u48_div" class=""></div>
-        <div id="u48_text" class="text ">
-          <p><span>Contact us</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u49" class="ax_default link_button">
-        <div id="u49_div" class=""></div>
-        <div id="u49_text" class="text ">
-          <p><span>Our team</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u50" class="ax_default link_button">
-        <div id="u50_div" class=""></div>
-        <div id="u50_text" class="text ">
-          <p><span>Twitter</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u51" class="ax_default link_button">
-        <div id="u51_div" class=""></div>
-        <div id="u51_text" class="text ">
-          <p><span>Facebook</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u52" class="ax_default link_button">
-        <div id="u52_div" class=""></div>
-        <div id="u52_text" class="text ">
-          <p><span>Donate</span></p>
-        </div>
-      </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u53" class="ax_default link_button">
-        <div id="u53_div" class=""></div>
-        <div id="u53_text" class="text ">
-          <p><span>What is NuBets?</span></p>
-        </div>
-      </div>
 
+        <div class="bog">
+            <?php
+            while ($bids = mysqli_fetch_array($result)) {
+                $MID=$bids['matchID'];
+                 $result1 = $mysql->query("SELECT * FROM `matches` WHERE `matchID` = '$MID'");
+            $match = $result1->fetch_assoc();
+            if ($bids['team']=="Перемога 1"){
+                $total = $bids['amount']*$match['coefficient1'];
+            }
+            if ($bids['team']=="Перемога 2"){
+                $total = $bids['amount']*$match['coefficient2'];
+            }
+            ?>
+            <div class="allbets">
+      <div class="box">
+        <div>Матч: <?php echo $match['team1'] ?> vs. <?php echo $match['team2'] ?></div>
+        <hr />
+        <div>Турнір: <?php echo $match['matchname'] ?></div>
+        <hr />
+        <div>Ставка: <?php echo $bids['team'] ?></div>
+        <hr />
+        <div>Сума ставки: <?php echo $bids['amount'] ?></div>
+        <hr />
+        <div>Можливий виграш: <?php echo $total ?></div>
+    </div></div>
+    <?php
+            }
+            ?>
+    </div>
+      
       <!-- Unnamed (Dynamic Panel) -->
       <div id="u54" class="ax_default ax_default_hidden" style="display:none; visibility: hidden">
         <div id="u54_state0" class="panel_state" data-label="State 1" style="">

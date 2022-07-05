@@ -6,7 +6,7 @@
     $mysql = new mysqli('localhost', 'root', '', 'betting_system');
     $result = $mysql->query("SELECT * FROM `customers` WHERE `phone_number` = '$tel' AND `password` = '$password'");
     $user = $result->fetch_assoc();
-    if (count($user)==0){
+    if (mysqli_num_rows($result)==0){
         echo "Такой пользователь не найден!";
         exit;
     }

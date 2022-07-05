@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start(); 
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Ставки CS:GO</title>
@@ -213,21 +216,35 @@
             <div id="u120" class="ax_default button">
               <div id="u120_div" class=""></div>
               <div id="u120_text" class="text ">
-                <p><span>BIG </span></p><p><span>vs.</span></p><p><span>HEROIC</span></p>
+              <p><?php $_SESSION['team1'] = "BIG"; echo "<span>". $_SESSION['team1'] ."</span>"?></p><p><span>vs.</span></p><p><?php $_SESSION['team2'] = "Heroic"; echo "<span>". $_SESSION['team2'] ."</span>"?></p>  
               </div>
             </div>
           </div>
         </div>
         <div id="u119_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
           <div id="u119_state1_content" class="panel_state_content">
-
+          <?php
+        error_reporting(0);
+        if($_COOKIE['user'] != ''):
+      ?>
             <!-- Unnamed (Rectangle) -->
-            <div id="u121" class="ax_default button">
+            <a id="u121" class="ax_default button" href='confirmation.php'>
               <div id="u121_div" class=""></div>
               <div id="u121_text" class="text ">
                 <p><span>2.1 </span></p><p><span>vs.</span></p><p><span>3.2</span></p>
               </div>
-            </div>
+            </a>
+            <?php
+        else:
+      echo '<a id="u121" class="ax_default button" onClick="alert(\'Увійдіть в аккаунт!\')">'?>
+              <div id="u121_div" class=""></div>
+              <div id="u121_text" class="text ">
+                <p><span>2.1 </span></p><p><span>vs.</span></p><p><span>3.2</span></p>
+              </div>
+            </a>
+            <?php
+        endif;
+      ?>
           </div>
         </div>
       </div>
@@ -241,21 +258,35 @@
             <div id="u123" class="ax_default button">
               <div id="u123_div" class=""></div>
               <div id="u123_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+              <p><?php $_SESSION['team1'] = "NAVI"; echo "<span>". $_SESSION['team1'] ."</span>"?></p><p><span>vs.</span></p><p><?php $_SESSION['team2'] = "NIP"; echo "<span>". $_SESSION['team2'] ."</span>"?></p>
               </div>
             </div>
           </div>
         </div>
         <div id="u122_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
           <div id="u122_state1_content" class="panel_state_content">
-
+          <?php
+        error_reporting(0);
+        if($_COOKIE['user'] != ''):
+      ?>
             <!-- Unnamed (Rectangle) -->
-            <div id="u124" class="ax_default button">
+            <a id="u124" class="ax_default button" href='confirmation.php'>
               <div id="u124_div" class=""></div>
               <div id="u124_text" class="text ">
                 <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
               </div>
-            </div>
+        </a>
+        <?php
+        else:
+      echo '<a id="u124" class="ax_default button" onClick="alert(\'Увійдіть в аккаунт!\')">'?>
+      <div id="u124_div" class=""></div>
+              <div id="u124_text" class="text ">
+                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+              </div>
+        </a>
+        <?php
+        endif;
+      ?>
           </div>
         </div>
       </div>
@@ -816,7 +847,7 @@
       <div id="u184" class="ax_default label">
         <div id="u184_div" class=""></div>
         <div id="u184_text" class="text ">
-          <p><a id="u186" href="exit.php" class="link"><span style="text-decoration:underline ;">ВИЙТИ</span></a></p>
+        <p><a id="u4" href="account.php" class="link"><span style="text-decoration:underline ;">ПРОФІЛЬ</span></a><span>/</span><a id="u4" href="exit.php" class="link"><span style="text-decoration:underline ;">ВИЙТИ</span></a></p>
         </div>
       </div>
       <?php
@@ -850,13 +881,35 @@
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u190" class="ax_default primary_button">
-        <div id="u190_div" class=""></div>
-        <div id="u190_text" class="text ">
-          <p><span>Мої ставки</span></p>
+      <!-- Unnamed (Dynamic Panel) -->
+      <div id="u1187" class="ax_default">
+        <div id="u1187_state0" class="panel_state" data-label="State 1" style="">
+          <div id="u1187_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u1188" class="ax_default primary_button">
+              <div id="u1188_div" class=""></div>
+              <div id="u1188_text" class="text ">
+                <p><a href="mybets.php" style="text-decoration:none ;">Мої ставки</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u1187_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
+          <div id="u1187_state1_content" class="panel_state_content">
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u1189" class="ax_default primary_button">
+              <div id="u1189_div" class=""></div>
+              <div id="u1189_text" class="text ">
+                <p><a href="mybets.php" style="text-decoration:none ;">Мої ставки</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+     
 
       <!-- Unnamed (Dynamic Panel) -->
       <div id="u191" class="ax_default">
@@ -911,7 +964,7 @@
             <div id="u197" class="ax_default primary_button">
               <div id="u197_div" class=""></div>
               <div id="u197_text" class="text ">
-                <p><span>Ігри</span></p>
+                <p><span>Dota 2</span></p>
               </div>
             </div>
           </div>
@@ -923,7 +976,7 @@
             <div id="u198" class="ax_default primary_button">
               <div id="u198_div" class=""></div>
               <div id="u198_text" class="text ">
-                <p><span>Ігри</span></p>
+                <p><span>Dota 2</span></p>
               </div>
             </div>
           </div>
@@ -939,7 +992,7 @@
             <div id="u200" class="ax_default primary_button">
               <div id="u200_div" class=""></div>
               <div id="u200_text" class="text ">
-                <p><span>Ігри</span></p>
+                <p><span>FIFA</span></p>
               </div>
             </div>
           </div>
@@ -951,7 +1004,7 @@
             <div id="u201" class="ax_default primary_button">
               <div id="u201_div" class=""></div>
               <div id="u201_text" class="text ">
-                <p><span>Ігри</span></p>
+                <p><span>FIFA</span></p>
               </div>
             </div>
           </div>
@@ -967,7 +1020,7 @@
             <div id="u203" class="ax_default primary_button">
               <div id="u203_div" class=""></div>
               <div id="u203_text" class="text ">
-                <p><span>Ігри</span></p>
+                <p><span>Clash Royale</span></p>
               </div>
             </div>
           </div>
@@ -979,7 +1032,7 @@
             <div id="u204" class="ax_default primary_button">
               <div id="u204_div" class=""></div>
               <div id="u204_text" class="text ">
-                <p><span>Ігри</span></p>
+                <p><span>Clash Royale</span></p>
               </div>
             </div>
           </div>
@@ -995,7 +1048,7 @@
             <div id="u206" class="ax_default primary_button">
               <div id="u206_div" class=""></div>
               <div id="u206_text" class="text ">
-                <p><span>Ігри</span></p>
+                <p><span>Overwatch</span></p>
               </div>
             </div>
           </div>
@@ -1007,7 +1060,7 @@
             <div id="u207" class="ax_default primary_button">
               <div id="u207_div" class=""></div>
               <div id="u207_text" class="text ">
-                <p><span>Ігри</span></p>
+                <p><span>Overwatch</span></p>
               </div>
             </div>
           </div>
