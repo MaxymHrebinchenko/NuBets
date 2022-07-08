@@ -21,7 +21,7 @@ body {
   .box{
     width:900px;
     margin-top:20px;
-    border: 4px solid black;
+    border: 4px solid rgb(0, 0, 0);
     font-family:"Arial Bold", "Arial", sans-serif;
     font-size: 25pxs;
     font-weight: 700;

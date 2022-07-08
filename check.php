@@ -8,5 +8,5 @@
     $mysql = new mysqli('localhost', 'root', '', 'betting_system');
     $mysql->query("INSERT INTO `customers` (`phone_number`, `wallet`, `age`, `password`, `access`) VALUES ('$tel', 0, '$age', '$password', 1)");
     $mysql->close();
-    header('Location: main.php');
+    header('Location: index.php');
 ?>

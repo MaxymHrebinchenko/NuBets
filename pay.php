@@ -1,3 +1,4 @@
+<link href="files/payerror/styles.css" type="text/css" rel="stylesheet"/>
 <?php
     $winner = filter_var(trim($_POST['winner']), FILTER_SANITIZE_STRING);
     $sum = filter_var(trim($_POST['sum']), FILTER_SANITIZE_STRING);
@@ -20,9 +21,13 @@
         $mysql->query("UPDATE `customers` SET `wallet`='$wallet' WHERE `UID` = '$UID'");
     $mysql->query("INSERT INTO `bids` (`UID`, `matchID`, `team`, `amount`) VALUES ('$UID', '$matchID', '$winner', '$sum')");
     $mysql->close();
-    header('Location: confirmation.php');
+    header('Location: mybets.php');
     }
-    else{
-        echo "На вашому балланcі недостатня сума!";
-    }   
+    else{ ?>
+        <div class="err">На вашому баланcі недостатня сума!</div>
+        <div class="don">Ви можете швидко поповнити рахунок прямо тут:</div>
+        <script src="app.js"></script>
+        <div id="container"></div>
+        <script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script>
+    <?php }   
 ?>

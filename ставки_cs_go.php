@@ -57,12 +57,14 @@ session_start();
           <div id="u102_state0_content" class="panel_state_content">
 
             <!-- Unnamed (Rectangle) -->
+            <a id="u103" class="ax_default button">
             <div id="u103" class="ax_default button">
               <div id="u103_div" class=""></div>
               <div id="u103_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>Hell</span></p><p><span>vs.</span></p><p><span>Fnatic</span></p>
               </div>
             </div>
+</a>
           </div>
         </div>
         <div id="u102_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
@@ -72,7 +74,7 @@ session_start();
             <div id="u104" class="ax_default button">
               <div id="u104_div" class=""></div>
               <div id="u104_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+                <p><span>2.4 </span></p><p><span>vs.</span></p><p><span>2.3</span></p>
               </div>
             </div>
           </div>
@@ -101,12 +103,14 @@ session_start();
           <div id="u107_state0_content" class="panel_state_content">
 
             <!-- Unnamed (Rectangle) -->
+            <a id="u108" class="ax_default button">
             <div id="u108" class="ax_default button">
               <div id="u108_div" class=""></div>
               <div id="u108_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>Astralis </span></p><p><span>vs.</span></p><p><span>FURIA</span></p>
               </div>
             </div>
+</a>
           </div>
         </div>
         <div id="u107_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
@@ -116,7 +120,7 @@ session_start();
             <div id="u109" class="ax_default button">
               <div id="u109_div" class=""></div>
               <div id="u109_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+                <p><span>1.5 </span></p><p><span>vs.</span></p><p><span>3.6</span></p>
               </div>
             </div>
           </div>
@@ -132,7 +136,7 @@ session_start();
             <div id="u111" class="ax_default button">
               <div id="u111_div" class=""></div>
               <div id="u111_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>MOUZ</span></p>
               </div>
             </div>
           </div>
@@ -141,12 +145,14 @@ session_start();
           <div id="u110_state1_content" class="panel_state_content">
 
             <!-- Unnamed (Rectangle) -->
+            <a id="u112" class="ax_default button">
             <div id="u112" class="ax_default button">
               <div id="u112_div" class=""></div>
               <div id="u112_text" class="text ">
                 <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
               </div>
             </div>
+</a>
           </div>
         </div>
       </div>
@@ -157,10 +163,11 @@ session_start();
           <div id="u113_state0_content" class="panel_state_content">
 
             <!-- Unnamed (Rectangle) -->
+            
             <div id="u114" class="ax_default button">
               <div id="u114_div" class=""></div>
               <div id="u114_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>ENCE </span></p><p><span>vs.</span></p><p><span>Vitality</span></p>
               </div>
             </div>
           </div>
@@ -169,16 +176,22 @@ session_start();
           <div id="u113_state1_content" class="panel_state_content">
 
             <!-- Unnamed (Rectangle) -->
+            <a id="u115" class="ax_default button">
             <div id="u115" class="ax_default button">
               <div id="u115_div" class=""></div>
               <div id="u115_text" class="text ">
                 <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
               </div>
             </div>
+</a>
           </div>
         </div>
       </div>
 
+
+
+
+      <form action="confirmation.php" method = "post" >
       <!-- Unnamed (Dynamic Panel) -->
       <div id="u116" class="ax_default">
         <div id="u116_state0" class="panel_state" data-label="State 1" style="">
@@ -188,25 +201,41 @@ session_start();
             <div id="u117" class="ax_default button">
               <div id="u117_div" class=""></div>
               <div id="u117_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>TYLOO </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
               </div>
             </div>
           </div>
         </div>
         <div id="u116_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
           <div id="u116_state1_content" class="panel_state_content">
-
+          <?php
+        error_reporting(0);
+        if($_COOKIE['user'] != ''):
+      ?>
             <!-- Unnamed (Rectangle) -->
+            <a id="u118" class="ax_default button">
             <div id="u118" class="ax_default button">
               <div id="u118_div" class=""></div>
               <div id="u118_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+                <p><span>2.2 </span></p><p><span>vs.</span></p><p><span>2.8</span></p>
               </div>
             </div>
+            </a>
+            <?php
+          else:
+      echo '<a id="u118" class="ax_default button" onClick="alert(\'Увійдіть в акаунт!\')">'?>
+              <div id="u118_div" class=""></div>
+              <div id="u118_text" class="text ">
+                <p><span>2.2 </span></p><p><span>vs.</span></p><p><span>2.8</span></p>
+              </div>
+            </a>
+            <?php
+        endif;
+      ?>
           </div>
         </div>
       </div>
-
+      </form>
       <!-- Unnamed (Dynamic Panel) -->
       <div id="u119" class="ax_default">
         <div id="u119_state0" class="panel_state" data-label="State 1" style="">
@@ -224,7 +253,6 @@ session_start();
         <div id="u119_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
           <div id="u119_state1_content" class="panel_state_content">
           <?php
-        error_reporting(0);
         if($_COOKIE['user'] != ''):
       ?>
             <!-- Unnamed (Rectangle) -->
@@ -236,7 +264,7 @@ session_start();
             </a>
             <?php
         else:
-      echo '<a id="u121" class="ax_default button" onClick="alert(\'Увійдіть в аккаунт!\')">'?>
+      echo '<a id="u121" class="ax_default button" onClick="alert(\'Увійдіть в акаунт!\')">'?>
               <div id="u121_div" class=""></div>
               <div id="u121_text" class="text ">
                 <p><span>2.1 </span></p><p><span>vs.</span></p><p><span>3.2</span></p>
@@ -258,7 +286,7 @@ session_start();
             <div id="u123" class="ax_default button">
               <div id="u123_div" class=""></div>
               <div id="u123_text" class="text ">
-              <p><?php $_SESSION['team1'] = "NAVI"; echo "<span>". $_SESSION['team1'] ."</span>"?></p><p><span>vs.</span></p><p><?php $_SESSION['team2'] = "NIP"; echo "<span>". $_SESSION['team2'] ."</span>"?></p>
+              <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>NIP</span></p>
               </div>
             </div>
           </div>
@@ -266,11 +294,10 @@ session_start();
         <div id="u122_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
           <div id="u122_state1_content" class="panel_state_content">
           <?php
-        error_reporting(0);
         if($_COOKIE['user'] != ''):
       ?>
             <!-- Unnamed (Rectangle) -->
-            <a id="u124" class="ax_default button" href='confirmation.php'>
+            <a id="u124" class="ax_default button" >
               <div id="u124_div" class=""></div>
               <div id="u124_text" class="text ">
                 <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
@@ -278,7 +305,7 @@ session_start();
         </a>
         <?php
         else:
-      echo '<a id="u124" class="ax_default button" onClick="alert(\'Увійдіть в аккаунт!\')">'?>
+      echo '<a id="u124" class="ax_default button" onClick="alert(\'Увійдіть в акаунт!\')">'?>
       <div id="u124_div" class=""></div>
               <div id="u124_text" class="text ">
                 <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
@@ -300,7 +327,7 @@ session_start();
             <div id="u126" class="ax_default button">
               <div id="u126_div" class=""></div>
               <div id="u126_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>MIBR </span></p><p><span>vs.</span></p><p><span>TYLOO</span></p>
               </div>
             </div>
           </div>
@@ -312,7 +339,7 @@ session_start();
             <div id="u127" class="ax_default button">
               <div id="u127_div" class=""></div>
               <div id="u127_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+                <p><span>3.7 </span></p><p><span>vs.</span></p><p><span>1.3</span></p>
               </div>
             </div>
           </div>
@@ -328,7 +355,7 @@ session_start();
             <div id="u129" class="ax_default button">
               <div id="u129_div" class=""></div>
               <div id="u129_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>ViCi</span></p><p><span>vs.</span></p><p><span>ORDER</span></p>
               </div>
             </div>
           </div>
@@ -340,7 +367,7 @@ session_start();
             <div id="u130" class="ax_default button">
               <div id="u130_div" class=""></div>
               <div id="u130_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+                <p><span>2.3 </span></p><p><span>vs.</span></p><p><span>2.5</span></p>
               </div>
             </div>
           </div>
@@ -356,7 +383,7 @@ session_start();
             <div id="u132" class="ax_default button">
               <div id="u132_div" class=""></div>
               <div id="u132_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>Cloud9</span></p><p><span>vs.</span></p><p><span>NIP</span></p>
               </div>
             </div>
           </div>
@@ -368,7 +395,7 @@ session_start();
             <div id="u133" class="ax_default button">
               <div id="u133_div" class=""></div>
               <div id="u133_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+                <p><span>2.3 </span></p><p><span>vs.</span></p><p><span>2.4</span></p>
               </div>
             </div>
           </div>
@@ -381,12 +408,14 @@ session_start();
           <div id="u134_state0_content" class="panel_state_content">
 
             <!-- Unnamed (Rectangle) -->
+            <a id="u135" class="ax_default button">
             <div id="u135" class="ax_default button">
               <div id="u135_div" class=""></div>
               <div id="u135_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>Kinguin</span></p><p><span>vs.</span></p><p><span>Astralis</span></p>
               </div>
             </div>
+      </a>
           </div>
         </div>
         <div id="u134_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
@@ -396,7 +425,7 @@ session_start();
             <div id="u136" class="ax_default button">
               <div id="u136_div" class=""></div>
               <div id="u136_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+                <p><span>2.9 </span></p><p><span>vs.</span></p><p><span>2.0</span></p>
               </div>
             </div>
           </div>
@@ -412,7 +441,7 @@ session_start();
             <div id="u138" class="ax_default button">
               <div id="u138_div" class=""></div>
               <div id="u138_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
+                <p><span>G2 </span></p><p><span>vs.</span></p><p><span>forZe</span></p>
               </div>
             </div>
           </div>
@@ -424,152 +453,14 @@ session_start();
             <div id="u139" class="ax_default button">
               <div id="u139_div" class=""></div>
               <div id="u139_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
+                <p><span>1.9 </span></p><p><span>vs.</span></p><p><span>2.8</span></p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u140" class="ax_default">
-        <div id="u140_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u140_state0_content" class="panel_state_content">
 
-            <!-- Unnamed (Rectangle) -->
-            <div id="u141" class="ax_default button">
-              <div id="u141_div" class=""></div>
-              <div id="u141_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u140_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u140_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u142" class="ax_default button">
-              <div id="u142_div" class=""></div>
-              <div id="u142_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u143" class="ax_default">
-        <div id="u143_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u143_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u144" class="ax_default button">
-              <div id="u144_div" class=""></div>
-              <div id="u144_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u143_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u143_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u145" class="ax_default button">
-              <div id="u145_div" class=""></div>
-              <div id="u145_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u146" class="ax_default">
-        <div id="u146_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u146_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u147" class="ax_default button">
-              <div id="u147_div" class=""></div>
-              <div id="u147_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u146_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u146_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u148" class="ax_default button">
-              <div id="u148_div" class=""></div>
-              <div id="u148_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u149" class="ax_default">
-        <div id="u149_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u149_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u150" class="ax_default button">
-              <div id="u150_div" class=""></div>
-              <div id="u150_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u149_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u149_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u151" class="ax_default button">
-              <div id="u151_div" class=""></div>
-              <div id="u151_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u152" class="ax_default">
-        <div id="u152_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u152_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u153" class="ax_default button">
-              <div id="u153_div" class=""></div>
-              <div id="u153_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u152_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u152_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u154" class="ax_default button">
-              <div id="u154_div" class=""></div>
-              <div id="u154_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Unnamed (Dynamic Panel) -->
       <div id="u155" class="ax_default">
@@ -599,173 +490,7 @@ session_start();
         </div>
       </div>
 
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u158" class="ax_default">
-        <div id="u158_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u158_state0_content" class="panel_state_content">
 
-            <!-- Unnamed (Rectangle) -->
-            <div id="u159" class="ax_default button">
-              <div id="u159_div" class=""></div>
-              <div id="u159_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u158_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u158_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u160" class="ax_default button">
-              <div id="u160_div" class=""></div>
-              <div id="u160_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u161" class="ax_default">
-        <div id="u161_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u161_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u162" class="ax_default button">
-              <div id="u162_div" class=""></div>
-              <div id="u162_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u161_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u161_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u163" class="ax_default button">
-              <div id="u163_div" class=""></div>
-              <div id="u163_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u164" class="ax_default">
-        <div id="u164_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u164_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u165" class="ax_default button">
-              <div id="u165_div" class=""></div>
-              <div id="u165_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u164_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u164_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u166" class="ax_default button">
-              <div id="u166_div" class=""></div>
-              <div id="u166_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u167" class="ax_default">
-        <div id="u167_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u167_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u168" class="ax_default button">
-              <div id="u168_div" class=""></div>
-              <div id="u168_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u167_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u167_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u169" class="ax_default button">
-              <div id="u169_div" class=""></div>
-              <div id="u169_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u170" class="ax_default">
-        <div id="u170_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u170_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u171" class="ax_default button">
-              <div id="u171_div" class=""></div>
-              <div id="u171_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u170_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u170_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u172" class="ax_default button">
-              <div id="u172_div" class=""></div>
-              <div id="u172_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u173" class="ax_default">
-        <div id="u173_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u173_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u174" class="ax_default button">
-              <div id="u174_div" class=""></div>
-              <div id="u174_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u173_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u173_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u175" class="ax_default button">
-              <div id="u175_div" class=""></div>
-              <div id="u175_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Unnamed (Dynamic Panel) -->
       <div id="u176" class="ax_default">
@@ -831,7 +556,6 @@ session_start();
         </div>
       </div>
       <?php
-        error_reporting(0);
         if($_COOKIE['user'] == ''):
       ?>
       <!-- Unnamed (Rectangle) -->
@@ -862,7 +586,7 @@ session_start();
             <div id="u188" class="ax_default primary_button">
               <div id="u188_div" class=""></div>
               <div id="u188_text" class="text ">
-                <p><a href="main.php" style="text-decoration:none ;">Головна</a></p>
+                <p><a href="index.php" style="text-decoration:none ;">Головна</a></p>
               </div>
             </div>
           </div>
@@ -874,7 +598,7 @@ session_start();
             <div id="u189" class="ax_default primary_button">
               <div id="u189_div" class=""></div>
               <div id="u189_text" class="text ">
-                <p><a href="main.php" style="text-decoration:none ;">Головна</a></p>
+                <p><a href="index.php" style="text-decoration:none ;">Головна</a></p>
               </div>
             </div>
           </div>
@@ -1094,175 +818,6 @@ session_start();
           </div>
         </div>
       </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u211" class="ax_default">
-        <div id="u211_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u211_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u212" class="ax_default button">
-              <div id="u212_div" class=""></div>
-              <div id="u212_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u211_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u211_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u213" class="ax_default button">
-              <div id="u213_div" class=""></div>
-              <div id="u213_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u214" class="ax_default">
-        <div id="u214_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u214_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u215" class="ax_default button">
-              <div id="u215_div" class=""></div>
-              <div id="u215_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u214_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u214_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u216" class="ax_default button">
-              <div id="u216_div" class=""></div>
-              <div id="u216_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u217" class="ax_default">
-        <div id="u217_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u217_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u218" class="ax_default button">
-              <div id="u218_div" class=""></div>
-              <div id="u218_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u217_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u217_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u219" class="ax_default button">
-              <div id="u219_div" class=""></div>
-              <div id="u219_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u220" class="ax_default">
-        <div id="u220_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u220_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u221" class="ax_default button">
-              <div id="u221_div" class=""></div>
-              <div id="u221_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u220_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u220_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u222" class="ax_default button">
-              <div id="u222_div" class=""></div>
-              <div id="u222_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u223" class="ax_default">
-        <div id="u223_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u223_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u224" class="ax_default button">
-              <div id="u224_div" class=""></div>
-              <div id="u224_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u223_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u223_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u225" class="ax_default button">
-              <div id="u225_div" class=""></div>
-              <div id="u225_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Dynamic Panel) -->
-      <div id="u226" class="ax_default">
-        <div id="u226_state0" class="panel_state" data-label="State 1" style="">
-          <div id="u226_state0_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u227" class="ax_default button">
-              <div id="u227_div" class=""></div>
-              <div id="u227_text" class="text ">
-                <p><span>NAVI </span></p><p><span>vs.</span></p><p><span>FAZE</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="u226_state1" class="panel_state" data-label="State 2" style="visibility: hidden;">
-          <div id="u226_state1_content" class="panel_state_content">
-
-            <!-- Unnamed (Rectangle) -->
-            <div id="u228" class="ax_default button">
-              <div id="u228_div" class=""></div>
-              <div id="u228_text" class="text ">
-                <p><span>2.7 </span></p><p><span>vs.</span></p><p><span>2.2</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Unnamed (Rectangle) -->
       <div id="u229" class="ax_default link_button">
         <div id="u229_div" class=""></div>

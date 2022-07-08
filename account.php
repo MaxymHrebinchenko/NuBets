@@ -13,7 +13,7 @@ twitter.com/realvjy
     <!--card-1-->
     <div class="card color-card">
       <ul>
-        <li><a href="main.php"><i class="fas fa-arrow-left i-l w"></i></a></li>
+        <li><a href="index.php"><i class="fas fa-arrow-left i-l w"></i></a></li>
       </ul>
       <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="profile-pic" class="profile">
       <h1 class="title"><?php $tel=$_COOKIE['user']; echo $tel; ?></h1>
@@ -23,6 +23,7 @@ twitter.com/realvjy
       <script src="app.js"></script>
         <div id="container"></div>
         <script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script>
+        <div class="withdraw" style="background-color: rgb(0, 227, 0); width:240px; margin-top:20px; margin-left:68px; height: 35px; font-family: Helvetica, sans-serif; border-radius: 5px;"><p style="padding: 8px 0; font-weight:500;">Виведення грошей</p></div>
 
       <hr>
       <div class="container">
